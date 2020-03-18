@@ -10,6 +10,8 @@
 微信通用类库，包括公众号、企业号、小程序、商户号
 </PackageReleaseNotes>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageProjectUrl>https://github.com/tamakiramimy/Rami.Wechat.Core</PackageProjectUrl>
+    <PackageLicenseFile>LICENSE.md</PackageLicenseFile>
   </PropertyGroup>
   
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
@@ -26,6 +28,10 @@
     <Compile Remove="Properties\PublishProfiles\**" />
     <EmbeddedResource Remove="Properties\PublishProfiles\**" />
     <None Remove="Properties\PublishProfiles\**" />
+    <None Include="LICENSE.md">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
   </ItemGroup>
 
   <ItemGroup>
